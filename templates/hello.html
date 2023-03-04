@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+<h3>Hello</h3>
+    <form action="{{ url_for('hello') }}">
+        <input type="text" name="name">
+        <!-- <button type="submit" formmethod="GET">GET送信</button> -->
+        <button type="submit" formmethod="POST">POST送信</button>
+    </form>
+こんにちは。{{ name }}さん。
+{% endblock %}
